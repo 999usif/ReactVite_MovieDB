@@ -1,5 +1,6 @@
 import { MovieModel } from "../models/Movie";
-const API_KEY = "";
+
+const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
 
 export const getPopularMovies = async (): Promise<MovieModel[]> => {

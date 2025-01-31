@@ -70,7 +70,7 @@ function Home() {
       ) : (
         <div className="movies-grid">
           {movies.map((movie: MovieModel) => (
-            <MovieCard movie={movie} />
+            <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
       )}
